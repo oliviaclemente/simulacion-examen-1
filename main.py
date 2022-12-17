@@ -1,5 +1,9 @@
-def countApplesAndOranges(s, t, a, b, apples, oranges):
+def countApplesAndOranges(s, t, apple, orange, apples, oranges):
   applecount= 0
   orangecount= 0
   for i in range(len(apples)):
-    temp = apple + 
+    temp = apple + apples[i]
+    if(temp in range(s,t+1)):
+      applecount += 1
+  for i in range(len(oranges)):
+    temp= orange
