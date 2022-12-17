@@ -22,4 +22,6 @@ if __name__ == '__main__':
   third_multiple_input = input().rstrip().split()
   m = int(third_multiple_input[0])
   n = int(third_multiple_input[1]
-  
+  countApplesAndOranges(s, t, apple, orange, apples, oranges)
+          
+ 
