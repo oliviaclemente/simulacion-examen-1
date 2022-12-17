@@ -194,6 +194,14 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "math3"
+version = "1.0"
+description = "这是第一个发布的版本"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "multidict"
 version = "6.0.2"
 description = "multidict implementation"
@@ -478,7 +486,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "flake8 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "f328c469a46d9cb95c79b10c69318f07ccca3f40cc6eb43ef51c87ad2ff1879b"
+content-hash = "75ce79a80c3a86f12da248d7a45829d28ac8d78e1350769a7f4d3faddc65baee"
 
 [metadata.files]
 aiohttp = []
@@ -498,6 +506,7 @@ itsdangerous = []
 jedi = []
 jinja2 = []
 markupsafe = []
+math3 = []
 multidict = []
 numpy = []
 packaging = []

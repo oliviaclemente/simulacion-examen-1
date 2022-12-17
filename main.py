@@ -1,27 +1,25 @@
-def countApplesAndOranges(s, t, apple, orange, apples, oranges):
-  applecount= 0
-  orangecount= 0
-  for i in range(len(apples)):
-    temp = apple + apples[i]
-    if(temp in range(s,t+1)):
-      applecount += 1
-  for i in range(len(oranges)):
-    temp= orange + oranges[i]
-    if(temp in range(s,t+1)):
-      orangecount += 1
-  print(applecount)
-  print(orangecount)
+def gradingStudents(grades):
+  n= int(input().strip())
+  for a in range(n):
+    grade= int(input().strip())
 
+    if grade >= 38:
+      mod5 = grade % 5
+      if mod5 >= 3:
+        garde = grade + (5 - mod5)
+  print(grade)
+
+  
 if __name__ == '__main__':
-  first_multiple_input = input().rstrip().split()
-  s = int(first_multiple_input[0])
-  t = int(first_multiple_input[1])
-  second_multiple_input = input().rstrip().split()
-  apple = int(second_multiple_input[0])
-  orange = int(second_multiple_input[1])
-  third_multiple_input = input().rstrip().split()
-  m = int(third_multiple_input[0])
-  n = int(third_multiple_input[1]
-  countApplesAndOranges(s, t, apple, orange, apples, oranges)
-          
- 
+  fptr = open(os.environ['OUTPUT_PATH'], 'w')
+  grades_count = int(input().strip())
+  grades = []
+  for _ in range(grades_count):
+    grades_item = int(input().strip())
+    grades.append(grades_item)
+  result = gradingStudents(grades)
+  fptr.write('\n'.join(map(str, result)))
+  fptr.write('\n')
+  fptr.close()
+
+
